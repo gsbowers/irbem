@@ -15,7 +15,7 @@ x2 = io.x2
 x3 = io.x3
 maginput = io.maginput
 
-;outputs must be passed in
+;outputs must be present
 bgeo = io.bgeo
 bmag = io.bmag
 gradbmag = io.gradbmag
@@ -24,7 +24,6 @@ diffb = io.diffb
 result = call_external(lib_name, 'get_bderivs_idl_', ntime, kext, options, $
   sysaxes,dx,iyear,idoy,UT,x1,x2,x3,maginput,Bgeo,Bmag,gradBmag,diffB)
 
-;replace bad values with !Values.NAN
 io.bgeo = bgeo
 io.bmag = bmag
 io.gradBmag = gradbmag
