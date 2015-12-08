@@ -11,41 +11,41 @@ nalpha_max = 25l
 
 ;input/output structure to return
 io = {lib_name:lib_name,$
-  		ntime_max:ntime_max,$
-  		ntime:ntime,$
-  		nalpha_max:nalpha_max,$
-  		alpha:dblarr(25l),$
-  		kext:0l,$
-  		options:lonarr(5),$ 
-  		sysaxes:0l,$
-  		dX:double(1e-3), $
+      ntime_max:ntime_max,$
+      ntime:ntime,$
+      nalpha_max:nalpha_max,$
+      alpha:dblarr(25l),$
+      kext:0l,$
+      options:lonarr(5),$ 
+      sysaxes:0l,$
+      dX:double(1e-3), $
       iyear:lonarr(ntime_max),$ 
-  		idoy:lonarr(ntime_max),$
-  		UT:dblarr(ntime_max), $
+      idoy:lonarr(ntime_max),$
+      UT:dblarr(ntime_max), $
       x1:dblarr(ntime_max), x2:dblarr(ntime_max), x3:dblarr(ntime_max), $
       maginput:dblarr(25,ntime_max), $
-  		;trace field line
-  		R0:0.0d,$
-  		Lm:dblarr(ntime_max),$
-  		Blocal:dblarr(ntime_max),$
-  		Bmin:dblarr(ntime_max),$
-  		XJ:dblarr(ntime_max),$
-  		Posit:dblarr(3,10000),$
-  		NPosit:0l,$
-  		;get_bderivs outputs
-  		Bgeo:dblarr(3,ntime_max),$
-  		Bmag:dblarr(ntime_max),$
-  		gradBmag:dblarr(3,ntime_max),$
-  		diffB:dblarr(3,3,ntime_max),$
-  		;compute_grad_curv_curl outputs
-  		grad_par:dblarr(ntime_max),$
-  		grad_perp:dblarr(3,ntime_max),$
-  		grad_drift:dblarr(3,ntime_max),$
-  		curvature:dblarr(3,ntime_max),$
-  		Rcurv:dblarr(3,ntime_max),$
-  		curv_drift:dblarr(ntime_max),$
-  		curlB:dblarr(3,ntime_max),$
-  		divB:dblarr(ntime_max)$
+      ;trace field line
+      R0:0.0d,$
+      Lm:dblarr(ntime_max),$
+      Blocal:dblarr(ntime_max),$
+      Bmin:dblarr(ntime_max),$
+      XJ:dblarr(ntime_max),$
+      Posit:dblarr(3,10000),$
+      NPosit:0l,$
+      ;get_bderivs outputs
+      Bgeo:dblarr(3,ntime_max),$
+      Bmag:dblarr(ntime_max),$
+      gradBmag:dblarr(3,ntime_max),$
+      diffB:dblarr(3,3,ntime_max),$
+      ;compute_grad_curv_curl outputs
+      grad_par:dblarr(ntime_max),$
+      grad_perp:dblarr(3,ntime_max),$
+      grad_drift:dblarr(3,ntime_max),$
+      curvature:dblarr(3,ntime_max),$
+      Rcurv:dblarr(3,ntime_max),$
+      curv_drift:dblarr(ntime_max),$
+      curlB:dblarr(3,ntime_max),$
+      divB:dblarr(ntime_max)$
 }
 
 ;defaults
